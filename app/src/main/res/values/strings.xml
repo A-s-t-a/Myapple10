@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Myapple10</string>
+    <string-array name="Genero">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+</resources>

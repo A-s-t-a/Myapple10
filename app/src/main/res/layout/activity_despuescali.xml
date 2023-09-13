@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:onClick="antescali"
+    android:orientation="vertical"
+    tools:context=".Despuescali">
+
+    <ToggleButton
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Controles Desactivados"
+        android:textOn="Controles Activados" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mte"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Guardar comentario"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genero:"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerGnero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Genero"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visitarias otra vez el lugar?:"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="SI" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cargabarra"
+        android:text="Iniciar Carga "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A mis amigos y familiares" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A personas de internet" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A mis compañeros de clase" />
+
+
+    <RatingBar
+        android:id="@+id/be"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5" />
+
+    <ImageButton
+        android:id="@+id/btn18"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:onClick="antescali"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/enviar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</LinearLayout>
