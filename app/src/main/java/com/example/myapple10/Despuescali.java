@@ -25,7 +25,7 @@ public class Despuescali extends AppCompatActivity {
     private RadioButton rb1, rb2;
     private ProgressBar pb;
     private Button  btn13,btn15;
-    private ImageButton btn18;
+    private ImageButton btn18, btn19;
     private RatingBar be;
     int contador = 0;
 
@@ -41,6 +41,7 @@ public class Despuescali extends AppCompatActivity {
         btn13 = (Button) findViewById(R.id.btn13);
         btn15 = (Button) findViewById(R.id.btn15);
         btn18 = (ImageButton) findViewById(R.id.btn18);
+        btn19 = (ImageButton) findViewById(R.id.btn19);
         pb = (ProgressBar) findViewById(R.id.pb);
         be = (RatingBar) findViewById(R.id.be);
 
@@ -125,4 +126,11 @@ public class Despuescali extends AppCompatActivity {
         Intent siggg = new Intent(this, Despueslogin.class);
         startActivity(siggg);
     }
+
+    public void redesM(View v){
+        Intent sigggg = new Intent(this, Medias.class);
+        startActivity(sigggg);
+    }
+
+
 }
